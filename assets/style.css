@@ -15,8 +15,6 @@
   --grad: linear-gradient(135deg, #64d2ff 0%, #2aa8f2 50%, #0078d4 100%);
   --good: #029246;
   --good-soft: rgba(2, 146, 70, 0.1);
-  --todo: #b45309;
-  --todo-soft: rgba(255, 179, 0, 0.18);
   --shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 8px 24px rgba(0, 0, 0, 0.05);
   --radius: 16px;
   color-scheme: light;
@@ -35,8 +33,6 @@
     --accent-soft: rgba(100, 210, 255, 0.12);
     --good: #34d399;
     --good-soft: rgba(52, 211, 153, 0.12);
-    --todo: #fbbf24;
-    --todo-soft: rgba(251, 191, 36, 0.14);
     --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 24px rgba(0, 0, 0, 0.25);
     color-scheme: dark;
   }
@@ -152,7 +148,7 @@ main { min-width: 0; }
   gap: 12px;
   margin-bottom: 56px;
 }
-@media (min-width: 480px) { .highlights { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 720px) { .highlights { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 .card {
   padding: 20px;
   border: 1px solid var(--border);
@@ -232,16 +228,6 @@ summary { cursor: pointer; padding: 14px 18px; font-weight: 600; color: var(--te
 details[open] summary { border-bottom: 1px solid var(--border); }
 details > div { padding: 4px 18px 14px; font-size: 14px; }
 details code { word-break: break-all; }
-
-/* An unfilled detail the owner still has to supply. Loud on purpose, so none ships by accident. */
-.todo {
-  padding: 0.05em 0.35em;
-  border-radius: 4px;
-  background: var(--todo-soft);
-  color: var(--todo);
-  font-weight: 600;
-  outline: 1px dashed var(--todo);
-}
 
 .contact-card {
   display: grid;
